@@ -33,19 +33,19 @@
         也可以使用“MAVEN”来自动生成，这样生成的代码会在target/generatord-source目录下    
         -->    
         <!--<javaModelGenerator targetPackage="com.joey.mybaties.test.pojo" targetProject="MAVEN">-->    
-        <javaModelGenerator targetPackage="com.qingyu.model" targetProject="./src/main/java">    
+        <javaModelGenerator targetPackage="com.tensorlib.model" targetProject="./src/main/java">    
             <property name="enableSubPackages" value="true"/>    
             <!-- 从数据库返回的值被清理前后的空格  -->    
             <property name="trimStrings" value="true" />    
         </javaModelGenerator>    
     
         <!--对应的mapper.xml文件  -->    
-        <sqlMapGenerator targetPackage="com.qingyu.mapping" targetProject="./src/main/java">    
+        <sqlMapGenerator targetPackage="com.tensorlib.mapping" targetProject="./src/main/java">    
             <property name="enableSubPackages" value="true"/>    
         </sqlMapGenerator>    
     
         <!-- 对应的Mapper接口类文件 -->    
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.qingyu.dao" targetProject="./src/main/java">    
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.tensorlib.dao" targetProject="./src/main/java">    
             <property name="enableSubPackages" value="true"/>    
         </javaClientGenerator>    
     
